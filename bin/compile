@@ -65,7 +65,7 @@ print "Generate localizations"
 flutter/bin/flutter gen-l10n
 
 print "Compiling the project"
-flutter/bin/flutter build web --release --quiet
+flutter/bin/flutter build web --release --quiet --web-renderer html
 
 PUB_CACHE="$HOME/.pub-cache/"
 mkdir -p $PUB_CACHE
