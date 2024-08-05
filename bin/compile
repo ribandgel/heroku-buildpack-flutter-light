@@ -61,6 +61,9 @@ flutter/bin/flutter pub get | indent
 
 PATH="$PATH":"$(pwd)/flutter/bin/"
 
+print "Cleaning flutter cache"
+flutter/bin/flutter clean | indent
+
 print "Generate localizations"
 flutter/bin/flutter gen-l10n
 
